@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Formulaire d'inscription -->
+    <div class="card" id="form-container">
+        <h2>Fisoratana anarana (Inscription)</h2>
+        <div class="input-group">
+            <label for="phone">Laharana finday</label>
+            <input type="text" id="phone" placeholder="Ohatra: 034 00 000 00">
+        </div>
+        <div class="input-group">
+            <label for="password">Teny miafina</label>
+            <input type="password" id="password" placeholder="Mot de passe">
+        </div>
+        <button onclick="register()">Handefa / S'inscrire</button>
+    </div>
+
+    <!-- Formulaire de confirmation de paiement -->
+    <div class="card hidden" id="payment-container">
+        <h2>Fanaovana Investment</h2>
+        <p>Mila manao investissement <strong id="amount">1 200 Ar</strong> ianao mba hampavitrika ny kaontinao.</p>
+        
+        <div class="alert">
+            Alefaso amin'ity laharana ity ny vola: <br>
+            <strong id="momo-number">038 55 388 89</strong>
+        </div>
+
+        <div class="input-group">
+            <label for="transaction-id">Référence / ID Transaction</label>
+            <input type="text" id="transaction-id" placeholder="Ohatra: 123456789 (Avy amin'ny SMS)">
+        </div>
+
+        <button onclick="confirmPayment()">Hanamarina ny fandoavana</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
